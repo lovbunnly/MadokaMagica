@@ -1,0 +1,259 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #0b0810;
+    color: #ffffff;
+}
+
+header {
+    background: linear-gradient(135deg, #170d24, #4a174d, #171027);
+    text-align: center;
+    padding: 45px 20px;
+    border-bottom: 2px solid #d66ba8;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 42px;
+    color: #ffffff;
+    text-shadow: 0 0 12px #d66ba8;
+}
+
+.subtitulo {
+    color: #f3b7dc;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+nav {
+    background-color: #120d19;
+    text-align: center;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    border-bottom: 1px solid #6f4a7d;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #f28fc4;
+}
+
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.portada {
+    background-color: #17121d;
+    margin-top: 30px;
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid #5d3d68;
+    box-shadow: 0 0 20px rgba(214, 107, 168, 0.15);
+}
+
+.imagen-principal {
+    display: block;
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.texto-portada {
+    text-align: center;
+    padding: 15px;
+}
+
+.texto-portada h2 {
+    color: #f28fc4;
+}
+
+.seccion {
+    background-color: #17121d;
+    margin-top: 30px;
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid #4d3658;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.seccion h2,
+.datos h2 {
+    color: #f28fc4;
+    border-bottom: 2px solid #8d5aa8;
+    padding-bottom: 10px;
+}
+
+.aviso {
+    background-color: #24152b;
+    border-left: 5px solid #d66ba8;
+    padding: 15px;
+    border-radius: 5px;
+    color: #f5d9eb;
+}
+
+.personajes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.personaje {
+    padding: 20px;
+    border-radius: 12px;
+    border-left: 7px solid;
+}
+
+.personaje h3 {
+    margin-top: 0;
+}
+
+.madoka {
+    background-color: #2b1625;
+    border-color: #f28fc4;
+}
+
+.madoka h3 {
+    color: #f28fc4;
+}
+
+.homura {
+    background-color: #1c1530;
+    border-color: #9b7ad6;
+}
+
+.homura h3 {
+    color: #bba4f0;
+}
+
+.sayaka {
+    background-color: #102231;
+    border-color: #67a9d8;
+}
+
+.sayaka h3 {
+    color: #83c6f0;
+}
+
+.mami {
+    background-color: #292313;
+    border-color: #d8bd55;
+}
+
+.mami h3 {
+    color: #f0d86b;
+}
+
+.kyoko {
+    background-color: #2d1719;
+    border-color: #d86d75;
+}
+
+.kyoko h3 {
+    color: #f08b91;
+}
+
+.peliculas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.pelicula {
+    background-color: #1c1722;
+    padding: 20px;
+    border-radius: 12px;
+    border: 2px solid #493450;
+}
+
+.pelicula h3 {
+    color: #d9a8e8;
+}
+
+.año {
+    display: inline-block;
+    background-color: #76549b;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.nueva {
+    background-color: #30162a;
+    border: 3px solid #d66ba8;
+    box-shadow: 0 0 15px rgba(214, 107, 168, 0.2);
+}
+
+.nueva .año {
+    background-color: #d66ba8;
+}
+
+.estreno {
+    color: #f28fc4;
+    font-weight: bold;
+    text-align: center;
+}
+
+.datos {
+    background-color: #17121d;
+    margin-top: 30px;
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid #4d3658;
+}
+
+.datos li {
+    margin: 12px 0;
+}
+
+footer {
+    margin-top: 40px;
+    background-color: #120d19;
+    color: #d8c6df;
+    text-align: center;
+    padding: 25px;
+    border-top: 1px solid #5d3d68;
+}
+
+@media (max-width: 700px) {
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px;
+    }
+
+    .personajes {
+        grid-template-columns: 1fr;
+    }
+
+    .peliculas {
+        grid-template-columns: 1fr;
+    }
+
+    main {
+        width: 95%;
+    }
+}
